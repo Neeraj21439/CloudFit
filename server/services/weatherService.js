@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const API_KEY = '89f0fb1b8512c48e3af9a1f1bb5e8c9e';
+const API_KEY = process.env.OPENWEATHER_API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 exports.getWeather = async (location) => {
